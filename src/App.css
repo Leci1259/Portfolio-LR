@@ -1,0 +1,159 @@
+:root {
+  --chocolate: #5f3310;
+  --white: white;
+  --tan: #ad8a60;
+  --textShadow: 0px 0px 10px;
+}
+
+body {
+  background: radial-gradient(var(--chocolate) 3px, transparent 4px),
+    radial-gradient(var(--white) 3px, transparent 4px),
+    linear-gradient(var(--tan) 4px, transparent 0),
+    linear-gradient(
+      45deg,
+      transparent 74px,
+      transparent 75px,
+      var(--tan) 75px,
+      var(--chocolate) 76px,
+      transparent 77px,
+      transparent 109px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75px,
+      transparent 76px,
+      var(--tan) 76px,
+      var(--chocolate) 77px,
+      transparent 78px,
+      transparent 109px
+    ),
+    var(--tan);
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+header {
+  text-align: center;
+  font-family: "Parisienne", cursive;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--chocolate);
+}
+header h1 {
+  font-size: 3rem;
+}
+
+nav {
+  font-family: "Shadows Into Light", cursive;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+nav li {
+  padding: 2%;
+}
+
+nav li a {
+  color: var(--white);
+}
+
+#bio-img {
+  border-style: solid;
+  border-color: var(--chocolate);
+  border-width: thick;
+  width: 33%;
+  margin-left: 33%;
+}
+main {
+  font-family: "Architects Daughter", cursive;
+}
+.flex-container {
+  display: flex;
+}
+aside {
+  color: var(--white);
+  text-shadow: 0px 0px 10px #5f3310;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 10%;
+}
+
+.work-card {
+  text-align: center;
+}
+
+.card.text {
+  width: 100%;
+  background-color: var(--white);
+  color: var(--chocolate);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-style: solid;
+  border-color: var(--chocolate);
+  border-width: thick;
+  text-align: center;
+}
+
+.text a {
+  color: var(--chocolate);
+  font-weight: bold;
+}
+
+.text p a {
+  text-decoration: none;
+}
+
+#About-Me {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+
+#About-Me h3 {
+  margin-left: 10%;
+  background-color: var(--chocolate);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-style: solid;
+  border-color: var(--chocolate);
+  border-width: thick;
+}
+
+#Contact {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  text-shadow: var(--textShadow) var(--chocolate);
+}
+
+#Contact ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+#Contact a {
+  color: var(--white);
+  text-shadow: var(--textShadow) var(--chocolate);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.work-card:first-child {
+  flex: 1 1 100%;
+}
+#instructions {
+  color: var(--chocolate);
+  background-color: white;
+  border-style: solid;
+  border-color: var(--chocolate);
+  font-weight: bold;
+}
