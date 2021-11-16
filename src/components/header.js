@@ -1,6 +1,7 @@
+import React from 'react';
 import navBar from './navigation';
 
-function headerDisplay() {
+export default function headerDisplay() {
     return (
         <header>
             <h1>Lesiana Reid</h1>
@@ -8,3 +9,4 @@ function headerDisplay() {
         </header>
     )
 }
+
