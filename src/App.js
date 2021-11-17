@@ -1,12 +1,15 @@
 import './App.css';
-import headerDisplay from './components/header';
+import HeaderDisplay from './components/header';
+import Profilepic from './components/profilePic';
 
 function App() {
   return (
     //input components
-    <div className='header'>
-      {headerDisplay}
+    <div>
+      <HeaderDisplay />
+      <Profilepic />
     </div>
+
   );
 }
 

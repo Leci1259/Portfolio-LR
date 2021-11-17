@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function navBar() {
+export default function NavBar() {
     return (
         <nav>
             <li><a href="#About-Me">About Me</a></li>

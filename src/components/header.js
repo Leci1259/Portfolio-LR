@@ -1,11 +1,11 @@
 import React from 'react';
-import navBar from './navigation';
+import NavBar from './navigation';
 
-export default function headerDisplay() {
+export default function HeaderDisplay() {
     return (
         <header>
             <h1>Lesiana Reid</h1>
-            {navBar}
+            <NavBar />
         </header>
     )
 }
