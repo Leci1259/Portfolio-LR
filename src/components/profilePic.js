@@ -1,7 +1,9 @@
 import React from 'react';
+import BioImage from './img/BioImage.jpg'
 
-export default function AboutMe() {
+export default function ProfilePic() {
     return (
-        <img src='./images/BioImage.jpg' alt="Bio Pic of Lesiana Reid" id="bio-img"></img>
+        <img src={BioImage} alt="Bio Pic of Lesiana Reid" id="bio-img"></img>
+
     )
 }

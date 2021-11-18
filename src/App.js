@@ -1,6 +1,6 @@
 import './App.css';
 import HeaderDisplay from './components/header';
-import Profilepic from './components/profilePic';
+import ProfilePic from './components/profilePic';
 import AboutMe from './components/aboutMe';
 import WorkSection from './components/workSection';
 import Footer from './components/footer';
@@ -10,7 +10,7 @@ function App() {
     //input components
     <div>
       <HeaderDisplay />
-      <Profilepic />
+      <ProfilePic />
       <div className="main">
         <AboutMe />
         <WorkSection />
