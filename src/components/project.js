@@ -1,14 +1,16 @@
-import React from 'react';
-
-
-const newSrcTags = ['./images/artnnection.png', './images/serverSideStation.png', './images/fitLife.jpg', './images/codeQuiz.png', './images/workDayScheduler.png', './images/weatherDash.png'];
-
+import React, { useState } from 'react';
 
 
 //function to output project cards
 export default function Project(props) {
 
+    const [pictureStatus, setPictureStatus] = useState(false);
     const ogPic = "./images/brownGiftBox.png";
+
+    const handleClick = () => {
+        setPictureStatus(prevMode => !prevMode)
+    }
+
 
     return (
         <section className="work-card">
@@ -17,7 +19,7 @@ export default function Project(props) {
                     {props.instructions}
                 </p>
             }
-            <img className={props.id} alt='project images' src={ogPic} height="400px" width="400px" ></img>
+            <img className={props.id} alt='project images' src={pictureStatus ? props.image : ogPic} height="400px" width="400px" onClick={handleClick}></img>
             <div className="card text ">
                 <a href={props.deployed} target="_blank" rel="noopener noreferrer">
                     <h4> {props.title} </h4>
