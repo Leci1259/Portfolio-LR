@@ -11,9 +11,11 @@ function App() {
     <div>
       <HeaderDisplay />
       <Profilepic />
-      <AboutMe />
-      <WorkSection />
-      <Footer />
+      <div className="main">
+        <AboutMe />
+        <WorkSection />
+        <Footer />
+      </div>
     </div>
 
   );

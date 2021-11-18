@@ -1,33 +1,33 @@
 import React from 'react';
 
-//all variables needed
 
-const classes = [0, 1, 2, 3, 4, 5]
+const newSrcTags = ['./images/artnnection.png', './images/serverSideStation.png', './images/fitLife.jpg', './images/codeQuiz.png', './images/workDayScheduler.png', './images/weatherDash.png'];
 
-const ogPic = "./images/brownGiftBox.png";
 
-const newSrcTags = ['./Assets/images/artnnection.png', './Assets/images/serverSideStation.png', './Assets/images/fitLife.jpg', './Assets/images/codeQuiz.png', './Assets/images/workDayScheduler.png', './Assets/images/weatherDash.png'];
-
-const titles = ['Artnnection', 'Server-Side Station', 'Fit Life', 'Code Quiz', 'Work Day Scheduler', 'Weather Dash'];
-
-const deployedAppLinks = ['https://artnnection.herokuapp.com/', 'https://leci1259.github.io/server-side-api/', 'https://lr-fit-life.herokuapp.com/', 'https://leci1259.github.io/HW4-CodeQuiz/', 'https://leci1259.github.io/HW5-WorkDayScheduler/', 'https://leci1259.github.io/WeatherDash/'];
-
-const repoLinks = ['https://github.com/Leci1259/Artnnection', 'https://github.com/Leci1259/server-side-api', 'https://github.com/Leci1259/fit_life', 'https://github.com/Leci1259/HW4-CodeQuiz', 'https://github.com/Leci1259/HW5-WorkDayScheduler', 'https://github.com/Leci1259/WeatherDash'];
 
 //function to output project cards
-export default function Project() {
+export default function Project(props) {
 
+    const ogPic = "./images/brownGiftBox.png";
 
     return (
-        <section class="work-card">
-            <img class={classes[0]} alt='project images' src={ogPic} height="400px" width="400px" onClick={handleClick}></img>
-            <div class="card text ">
-                <a href={deployedAppLinks[0]} target="_blank" rel="noopener noreferrer">
-                    <h4> {titles[0]} </h4>
+        <section className="work-card">
+            {props.instructions &&
+                <p id='instructions'>
+                    {props.instructions}
+                </p>
+            }
+            <img className={props.id} alt='project images' src={ogPic} height="400px" width="400px" ></img>
+            <div className="card text ">
+                <a href={props.deployed} target="_blank" rel="noopener noreferrer">
+                    <h4> {props.title} </h4>
                 </a>
+                <p> {props.description}</p>
                 <p>
-                    <a href={repoLinks[0]} target="_blank" rel="noopener noreferrer">Repo </a>
+                    <a href={props.repo} target="_blank" rel="noopener noreferrer">Repo </a>
                     <br></br> <br></br>
+                    Technologies Used:<br></br>
+                    {props.tech}
                 </p>
             </div>
         </section>

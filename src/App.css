@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: "Architects Daughter", cursive;
   background: radial-gradient(var(--chocolate) 3px, transparent 4px),
     radial-gradient(var(--white) 3px, transparent 4px),
     linear-gradient(var(--tan) 4px, transparent 0),
@@ -43,7 +44,7 @@ header h1 {
 }
 
 nav {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Architects Daughter", cursive;
   display: flex;
   list-style-type: none;
   justify-content: center;
@@ -157,4 +158,8 @@ aside {
   border-style: solid;
   border-color: var(--chocolate);
   font-weight: bold;
+}
+
+.main a:hover {
+  text-shadow: 0 0 15px var(--tan);
 }
