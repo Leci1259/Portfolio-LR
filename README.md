@@ -6,7 +6,7 @@ Welcome to my portfolio. Inside are a few software engineering project examples.
 
 ## Linked to Deployed App
 
-https://leci1259.github.io/Portfolio_LR/
+https://leci1259.github.io/Portfolio-LR/
 
 ## Website Preview
 
