@@ -6,66 +6,66 @@
 }
 
 body {
-  font-family: "Architects Daughter", cursive;
-  background: radial-gradient(var(--chocolate) 3px, transparent 4px),
-    radial-gradient(var(--white) 3px, transparent 4px),
-    linear-gradient(var(--tan) 4px, transparent 0),
-    linear-gradient(
-      45deg,
-      transparent 74px,
-      transparent 75px,
-      var(--tan) 75px,
-      var(--chocolate) 76px,
-      transparent 77px,
-      transparent 109px
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 75px,
-      transparent 76px,
-      var(--tan) 76px,
-      var(--chocolate) 77px,
-      transparent 78px,
-      transparent 109px
-    ),
-    var(--tan);
-  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2e8db;
 }
 header {
   text-align: center;
-  font-family: "Parisienne", cursive;
+  height: 350px;
   width: 100%;
   color: var(--white);
-  background-color: var(--chocolate);
 }
-header h1 {
-  font-size: 3rem;
+#header-img {
+  width: 100%;
+  height: 95%;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
 }
 
-nav {
-  font-family: "Architects Daughter", cursive;
-  display: flex;
+.nav {
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
   list-style-type: none;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+  margin-top: 0%;
+  color: black;
 }
 
-nav li {
+.one {
   padding: 2%;
+  background-color: #ca9f92;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+}
+.two {
+  padding: 2%;
+  background-color: #1f6566;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+}
+.three {
+  padding: 2%;
+  background-color: #bc7832;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
 }
 
-nav li a {
-  color: var(--white);
+.nav:hover {
+  color: white;
 }
 
 #bio-img {
   border-style: solid;
-  border-color: var(--chocolate);
+  border-color: white;
   border-width: thick;
   width: 33%;
   margin-left: 33%;
-  margin-top: 2.5%;
+  margin-top: 7%;
 }
 main {
   font-family: "Architects Daughter", cursive;
@@ -74,9 +74,9 @@ main {
   display: flex;
 }
 aside {
-  color: var(--white);
-  text-shadow: 0px 0px 10px #5f3310;
-  font-size: 1rem;
+  font-family: "Sacramento", cursive;
+  color: black;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,25 +87,30 @@ aside {
   justify-content: space-evenly;
   margin-left: 10%;
 }
+#Work {
+  margin-top: 10%;
+}
 
 .work-card {
   text-align: center;
+  width: 500px;
+  height: 900px;
+}
+.work-card a:hover {
+  color: black;
 }
 
 .card.text {
-  width: 100%;
-  background-color: var(--white);
-  color: var(--chocolate);
+  background-color: #1f6566;
+  color: white;
   font-weight: bold;
   font-size: 1.5rem;
-  border-style: solid;
-  border-color: var(--chocolate);
-  border-width: thick;
   text-align: center;
+  padding: 2%;
 }
 
 .text a {
-  color: var(--chocolate);
+  color: white;
   font-weight: bold;
 }
 
@@ -118,16 +123,18 @@ aside {
   flex-direction: column;
   color: var(--white);
 }
+#About-Me h2 {
+  color: black;
+  text-shadow: 0px 0px 100px #ca9f92;
+}
 
 #About-Me h3 {
   margin-left: 10%;
-  background-color: var(--chocolate);
-  color: var(--white);
+  background-color: #ca9f92;
+  color: white;
   font-weight: bold;
   font-size: 1.5rem;
-  border-style: solid;
-  border-color: var(--chocolate);
-  border-width: thick;
+  padding: 1%;
 }
 
 #Contact {
@@ -138,26 +145,33 @@ aside {
 }
 
 #Contact ul {
+  font-family: "Sacramento", cursive;
+  color: black;
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-}
-#Contact a {
-  color: var(--white);
-  text-shadow: var(--textShadow) var(--chocolate);
+  text-shadow: 0px 0px 100px #ca9f92;
   font-weight: 900;
   font-size: 1.5rem;
 }
-
+#Contact a {
+  color: black;
+  font-size: 2rem;
+}
+#Contact a:hover {
+  color: white;
+}
 .work-card:first-child {
   flex: 1 1 100%;
 }
 #instructions {
-  color: var(--chocolate);
+  font-family: "Montserrat", sans-serif;
+  color: #1f6566;
   background-color: white;
   border-style: solid;
-  border-color: var(--chocolate);
+  border-color: #1f6566;
   font-weight: bold;
+  font-size: larger;
 }
 
 .main a:hover {

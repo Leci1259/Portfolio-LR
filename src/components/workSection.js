@@ -1,5 +1,11 @@
 import React from 'react';
 import Project from './project';
+import artImg from './img/artnnection.png'
+import serverImg from './img/serverSideStation.png'
+import fitImage from './img/fitLife.jpg'
+import codeImage from './img/codeQuiz.png'
+import weatherImage from './img/weatherDash.png'
+import workImage from './img/workDayScheduler.png'
 
 //all projects
 const projectInfo = [
@@ -10,9 +16,9 @@ const projectInfo = [
             "A digital art trading platform where artists, digital creators, and designers can share their creations.",
         repo: "https://github.com/Leci1259/Artnnection",
         deployed: "https://artnnection.herokuapp.com/",
-        image: "./images/artnnection.png",
+        image: artImg,
         tech: 'CSS, JS, jQuery, Handlebars,js, Express.js, SQL, Passport.js',
-        instructions: 'Click the brown gift box to see an application preview. Click the title to see the deployed app. Click "repo" to see the repository.'
+        instructions: 'Click the gift box to see an application preview. Click the title to see the deployed app. Click "repo" to see the repository.'
 
     },
     {
@@ -22,7 +28,7 @@ const projectInfo = [
             "A site that provides additional insight on how server-side APIs work; it includes a documentation overview, implementation example and walk through.",
         repo: "https://github.com/Leci1259/server-side-api",
         deployed: "https://leci1259.github.io/server-side-api/",
-        image: "./images/serverSideStation.png",
+        image: serverImg,
         tech: "HTML, CSS, JS, Open Brewery API, OpenWeather API"
     },
     {
@@ -32,7 +38,7 @@ const projectInfo = [
             "A workout tracking site for resistance and cardio workouts.",
         repo: "https://github.com/Leci1259/fit_life",
         deployed: "https://lr-fit-life.herokuapp.com/",
-        image: "./images/fitLife.jpg",
+        image: fitImage,
         tech: "HTML, CSS, JS, Express.js, MongoDB, Mongoose.js"
     },
     {
@@ -42,7 +48,7 @@ const projectInfo = [
             "This site is a short quiz on JavaScript fundamentals.",
         repo: "https://github.com/Leci1259/HW4-CodeQuiz",
         deployed: "https://leci1259.github.io/HW4-CodeQuiz/",
-        image: "./images/codeQuiz.png",
+        image: codeImage,
         tech: "HTML, CSS, JS"
     },
     {
@@ -52,7 +58,7 @@ const projectInfo = [
             "A Halloween-themed site that allows you to enter your schedule for the business hours of 9-5.",
         repo: "https://github.com/Leci1259/HW5-WorkDayScheduler",
         deployed: "https://leci1259.github.io/HW5-WorkDayScheduler/",
-        image: "./images/workDayScheduler.png",
+        image: workImage,
         tech: "HTML, CSS, JS, jQuery"
     },
     {
@@ -62,7 +68,7 @@ const projectInfo = [
             "A site that will render the current weather and 5-day forecast for any city of your choice.",
         repo: "https://github.com/Leci1259/WeatherDash",
         deployed: "https://leci1259.github.io/WeatherDash/",
-        image: "./images/weatherDash.png",
+        image: weatherImage,
         tech: " HTML, CSS, JS, jQuery, OpenWeather API, Bootstrap"
     },
 ];

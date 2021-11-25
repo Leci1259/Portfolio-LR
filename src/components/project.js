@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-
+import brownBox from "./img/giftbox.png";
 
 //function to output project cards
 export default function Project(props) {
 
     const [pictureStatus, setPictureStatus] = useState(false);
-    const ogPic = "./images/brownGiftBox.png";
+    const ogPic = brownBox;
 
     const handleClick = () => {
         setPictureStatus(prevMode => !prevMode)
@@ -19,7 +19,7 @@ export default function Project(props) {
                     {props.instructions}
                 </p>
             }
-            <img className={props.id} alt='project images' src={pictureStatus ? props.image : ogPic} height="400px" width="400px" onClick={handleClick}></img>
+            <img className={props.id} alt='project images' src={pictureStatus ? props.image : ogPic} height="400px" width="500px" onClick={handleClick}></img>
             <div className="card text ">
                 <a href={props.deployed} target="_blank" rel="noopener noreferrer">
                     <h4> {props.title} </h4>
