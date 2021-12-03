@@ -10,7 +10,7 @@ https://leci1259.github.io/Portfolio-LR/
 
 ## Website Preview
 
-![Website Image](https://github.com/Leci1259/Portfolio_LR/blob/main/Assets/images/Screenshot%202021-09-30%20214954.png)
+![Website Image](https://github.com/Leci1259/Portfolio-LR/blob/main/src/components/img/SS.png)
 
 ## Technologies used
 
